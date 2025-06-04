@@ -1,22 +1,52 @@
 body {
-    max-width: 600px;
-    margin: 30px auto;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 10px;
+    max-width: 700px;
+    margin: 40px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f1f3f6;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
 label {
     display: block;
-    margin-top: 10px;
-    font-weight: bold;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #333;
 }
+
 input, select, textarea {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fff;
 }
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
 button {
-    margin-top: 20px;
-    padding: 10px 20px;
+    margin-top: 25px;
+    padding: 12px 20px;
+    background-color: #0059b3;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
 }
+
+button:hover {
+    background-color: #003d80;
+}
+
