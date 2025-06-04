@@ -47,7 +47,7 @@ def index():
 
         return send_file(filepath, as_attachment=True)
 
-    return render_template("index.html")
+    return render_template("index.html", datetime=datetime)
 
 
 if __name__ == "__main__":
