@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Progress Report</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Student Progress Report</h2>
+    <form method="POST">
+        <label>Student:</label>
+        <input type="text" name="student" required>
+
+        <label>Teacher:</label>
+        <input type="text" name="teacher" value="Precious Khuzwayo (Cert Reg 15468)" required>
+
+        <label>Date:</label>
+        <input type="date" name="date" value="{{ datetime.utcnow().date() }}" required>
+
+        <label>Subject:</label>
+        <input type="text" name="subject" value="English">
+
+        <label>Course:</label>
+        <select name="course">
+            <option>Academic English</option>
+            <option>Business English</option>
+            <option>Conversational English</option>
+            <option>English for IT</option>
+            <option>Grammar</option>
+            <option>Speaking practice</option>
+            <option>Writing</option>
+        </select>
+
+        <label>Objective:</label>
+        <textarea name="objective">Improve fluency, pronunciation, vocabulary, writing</textarea>
+
+        <label>Coursework Covered:</label>
+        <div>
+            <input type="checkbox" name="coursework" value="Vocabulary"> Vocabulary<br>
+            <input type="checkbox" name="coursework" value="Listening"> Listening<br>
+            <input type="checkbox" name="coursework" value="Reading"> Reading<br>
+            <input type="checkbox" name="coursework" value="Speaking practice"> Speaking practice<br>
+            <input type="checkbox" name="coursework" value="Writing"> Writing<br>
+            <input type="checkbox" name="coursework" value="Grammar"> Grammar<br>
+            <input type="checkbox" name="coursework" value="Pronunciation"> Pronunciation<br>
+        </div>
+
+        <label>Progress:</label>
+        <textarea name="progress"></textarea>
+
+        <label>Area of Improvement:</label>
+        <textarea name="improvement"></textarea>
+
+        <button type="submit">Generate PDF</button>
+    </form>
+</body>
+</html>
