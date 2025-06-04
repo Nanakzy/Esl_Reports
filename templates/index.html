@@ -7,8 +7,23 @@
 <body>
     <h2>Student Progress Report</h2>
     <form method="POST">
-        <label>Student:</label>
-        <input type="text" name="student" required>
+        <label for="student">Student:</label>
+        <select name="student" id="student" required>
+            <option value="">-- Select a student --</option>
+            <option value="Alicia">Alicia</option>
+            <option value="Annia">Annia</option>
+            <option value="Christoz">Christoz</option>
+            <option value="Dani">Dani</option>
+            <option value="Jacob">Jacob</option>
+            <option value="Jose">Jose</option>
+            <option value="Loreto">Loreto</option>
+            <option value="Maria">Maria</option>
+            <option value="Mustafa">Mustafa</option>
+            <option value="Patricia">Patricia</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
 
         <label>Teacher:</label>
         <input type="text" name="teacher" value="Precious Khuzwayo (Cert Reg 15468)" required>
